@@ -17,7 +17,7 @@ st.sidebar.title("ChatGPT-")
 # Request API Key in the sidebar
 #api_key = st.sidebar.text_input("Enter your OpenAI API Key", type="password")
 
-openai.api_key = st.secrets["my_api_key"]
+os.environ['OPENAI_API_KEY'] = st.secrets["my_api_key"]
 
 agent = create_csv_agent(
     OpenAI(temperature=0),

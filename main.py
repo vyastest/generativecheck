@@ -32,4 +32,5 @@ agent = create_csv_agent(
 
 
 
-agent.run("which bowlers gave the most total wides ")
+a=agent.run("which bowlers gave the most total wides ")
+st.write(a)

@@ -6,7 +6,7 @@ from langchain.agents import create_csv_agent
 import streamlit as st
 import os
 import pandas as pd
-import_optional_dependency("tabulate")
+import tabulate
 
 # Now you can use 'tabulate' if it's available
 try:

@@ -14,7 +14,7 @@ import pandas as pd
 df=pd.read_csv("teststream.csv")
 
 # Add sidebar content
-st.sidebar.title("ChatGPT-")
+st.sidebar.title("CricketGPT")
 #st.sidebar.markdown("This app demonstrates a ChatGPT-like clone using Streamlit and the OpenAI API.")
 #st.sidebar.markdown("Enter your OpenAI API Key in the input field on the sidebar to get started.")
 

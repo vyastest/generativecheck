@@ -6,7 +6,6 @@ from langchain.agents import create_csv_agent
 import streamlit as st
 import os
 import pandas as pd
-import tabulate
 
 df=pd.read_csv("teststream.csv")
 

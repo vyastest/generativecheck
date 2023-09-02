@@ -6,6 +6,15 @@ from langchain.agents import create_csv_agent
 import streamlit as st
 import os
 import pandas as pd
+import_optional_dependency("tabulate")
+
+# Now you can use 'tabulate' if it's available
+try:
+    import tabulate
+    # Use tabulate here
+except ImportError:
+    st.error("The 'tabulate' package is not available. Please install it using pip.")
+
 
 df=pd.read_csv("teststream.csv")
 

@@ -23,14 +23,22 @@ st.sidebar.title("ChatGPT-")
 
 os.environ['OPENAI_API_KEY'] = st.secrets["my_api_key"]
 
+
 agent = create_csv_agent(
     OpenAI(temperature=0),
     path="teststream.csv",  # Replace with the actual file path
     verbose=True,
     agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION
 )
+# Text input for user input
+user_input = st.text_area("Enter text to run:", "")
+
+# Check if the user has entered text
+if user_input:
+    a=agent.run(user_input)
+    st.write(a)
+    
 
 
+    
 
-a=agent.run("which bowlers gave the most total wides ")
-st.write(a)

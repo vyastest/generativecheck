@@ -1,5 +1,4 @@
 openai
-tabulate
 langchain
 streamlit
 pandas
